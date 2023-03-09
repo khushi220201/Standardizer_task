@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standardizer</title>
+    <link rel="stylesheet" href="/bs5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/standardizer.css">
+</head>
+
+<body>
+    <header id="addNavbar"></header>
+    <section class="container-fluid p-4">
+        <div class="row-fluid d-flex">
+
+            <div class="col-md-10">
+                <div class="btn-group btn-group-sm" role="group">
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn1" autocomplete="off"
+                        checked value="Assets">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn1">Assets</label>
+    
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn2" autocomplete="off" value="Liability">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn2">Liability</label>
+    
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn3" autocomplete="off" value="Equity/Capital">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn3">Equity/Capital</label>
+    
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn4" autocomplete="off" value="Revenue">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn4">Revenue</label>
+    
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn5" autocomplete="off" value="CoGS">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn5">CoGS</label>
+    
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn6" autocomplete="off" value="G&A Expenses">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn6">G&A Expenses</label>
+    
+                    <input type="radio" class="btn-check" name="accounttypeBtn" id="accounttypeBtn7" autocomplete="off" value="Other Revenue &
+                    Expenses">
+                    <label class="btn menubuttonbg text-secondary mx-2 rounded px-4" for="accounttypeBtn7">Other Revenue &
+                        Expenses</label>
+    
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class=" btn btn-sm btnSubmit text-white float-end">Submit</button>
+
+            </div>
+            
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-2">
+                <div class="text-start">
+                    <p class="fw-bold fontsizeForMaindiv">Source Account Structure</p>
+                    <div class="border-1 rounded">
+                        <p class="text-white p-2 mb-2 bg-info border-1 rounded">Balance Sheet Accounts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="text-start">
+                    <p class="fw-bold fontsizeForMaindiv">Likely Destination Account</p>
+                    <div class="border-1 rounded">
+                        <p class="text-white p-2 mb-2 dropableDivBg1 border-1 rounded">Most Likely</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 p-0">
+                <div class="text-start">
+                    <p class="fw-bold fontsizeForMaindiv text-white">Likely</p>
+                    <div class="border-1 rounded">
+                        <p class="text-white p-2 mb-2 dropableDivBg2 border-1 rounded">Likely</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="text-start">
+                    <p class="fw-bold fontsizeForMaindiv text-white">Possible</p>
+                    <div class="border-1 rounded">
+                        <p class="text-white p-2 mb-2 dropableDivBg3 border-1 rounded">Possible</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-start">
+                    <p class="fw-bold fontsizeForMaindiv">Destination Account Structure</p>
+                    <div class="fontsizeForMaindiv">
+                        <div class="border-1 rounded bg-success">
+                            <p class="text-white p-2 mb-2">Balance Sheet Accounts</p>
+                        </div>
+                        <div id="masterData">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <script src="/bs5/jquery-3.6.3.min.js"></script>
+    <script src="/bs5/js/bootstrap.min.js"></script>
+    <script src="/js/standardizer.js"></script>
+</body>
+
+</html>

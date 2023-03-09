@@ -1,0 +1,58 @@
+/* navabr bg color */
+
+.navbarbg{
+    background-color: rgb(235 235 235);
+    border: 1px solid rgb(212, 211, 211);
+}
+
+/* login image at left corner */
+
+.loginimg{
+    height: 35px;
+    width: 35px;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: rgb(0, 217, 255) !important;
+    border-bottom: 2px solid rgb(0, 217, 255);
+    height: 120%;
+    width: 22px;
+    padding-inline: unset;
+ 
+
+}
+.menubuttonbg{
+    background-color: rgb(235 235 235);
+    font-size: smaller;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:active {
+    background-color: rgb(0, 217, 255) !important;
+    color: white !important;
+    border: none !important;
+    
+}  
+
+.btnSubmit{
+    background-color: rgb(27, 153, 27);
+    width: 40%;
+    border-bottom: 1px solid rgb(27, 153, 27); 
+}
+
+.fontsizeForMaindiv{
+    font-size: 15px;
+}
+
+.dynamicDiv{
+    border: 1px solid rgb(212, 211, 211);
+}
+.dropableDivBg1{
+    background-color: rgb(99, 204, 204);
+}
+.dropableDivBg2{
+    background-color: rgb(118, 219, 219);
+}
+.dropableDivBg3{
+    background-color: rgb(135, 224, 224);
+}
