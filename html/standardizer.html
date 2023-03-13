@@ -30,56 +30,83 @@
                         data="Revenue">Revenue</button>
                     <button type="button" class="btn menubuttonbg text-secondary rounded getAccountBtnValue mx-1"
                         data="COGS">CoGS</button>
-                    <button type="button" class="btn menubuttonbg text-secondary rounded getAccountBtnValue mx-1" data="Expense">G&A
+                    <button type="button" class="btn menubuttonbg text-secondary rounded getAccountBtnValue mx-1"
+                        data="Expense">G&A
                         Expenses</button>
-                    <button type="button" class="btn menubuttonbg text-secondary rounded getAccountBtnValue mx-1" data="Other Rev & Exp">Other
+                    <button type="button" class="btn menubuttonbg text-secondary rounded getAccountBtnValue mx-1"
+                        data="Other Rev & Exp">Other
                         Revenue &
                         Expenses</button>
                 </div>
             </div>
 
             <div class="col-md-2">
-                <button type="button" class=" btn btn-sm btnSubmit text-white float-end">Submit</button>
+                <button type="button" class=" btn btn-sm btnSubmit text-white float-end" id="finalSubmit">Submit</button>
+                <br>
+                <p class="lastupdateFontSize text-end mt-2">Last Updated on 08-07-2020 at 10:45am</p>
             </div>
 
         </div>
+        <div class="row mt-4 fontsizeForMaindiv">
+            <div class="col-md-12">
+                <div class="text-start fw-bold">
+                    <p class="humanUpdateFont"><span class="pe-1"><i class="fa-regular fa-circle"></i></span> Human
+                        Updated</p>
+                </div>
+            </div>
+        </div>
 
-        <div class="row mt-5">
+
+        <div class="row mt-1 fontsizeForMaindiv">
             <div class="col-md-3">
                 <div class="text-start">
-                    <p class="fw-bold fontsizeForMaindiv">Source Account Structure</p>
+
+                    <p class="fw-bold">Source Account Structure</p>
+
                     <div class="border-1 rounded">
                         <p class="text-white p-2 mb-2 sourceAccountBg border-1 rounded">Balance Sheet Accounts</p>
 
                     </div>
+
                     <div id="sourceAccountData">
 
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
+
                 <div class="row">
+                    <p class="fw-bold">Likely Destination Account</p>
                     <div class="col-md-4">
                         <div class="text-start">
-                            <p class="fw-bold fontsizeForMaindiv">Likely Destination Account</p>
+
                             <div class="border-1 rounded">
                                 <p class="text-white p-2 mb-2 dropableDivBg1 border-1 rounded">Most Likely</p>
+                                <div id="mostLikelyData">
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-3">
-                        <div class="text-start mt-4">
+                    <div class="col-md-4">
+                        <div class="text-start">
 
                             <div class="border-1 rounded">
                                 <p class="text-white p-2 mb-2 dropableDivBg2 border-1 rounded">Likely</p>
+                                <div id="likelyData">
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-3">
-                        <div class="text-start mt-4">
+                    <div class="col-md-4">
+                        <div class="text-start">
 
                             <div class="border-1 rounded">
                                 <p class="text-white p-2 mb-2 dropableDivBg3 border-1 rounded">Possible</p>
+                                <div id="possibleData">
+
+                                </div>
                             </div>
                         </div>
 
@@ -90,15 +117,15 @@
             </div>
             <div class="col-md-3">
                 <div class="text-start">
-                    <p class="fw-bold fontsizeForMaindiv">Destination Account Structure</p>
+                    <p class="fw-bold">Destination Account Structure</p>
 
-                    <div class="fontsizeForMaindiv">
+                    <div class="">
                         <div class="border-1 rounded bgDestination">
                             <p class="text-white p-2 mb-2">Balance Sheet Accounts</p>
                         </div>
 
                         <nav id="menu-container" class="arrow border-1 rounded">
-                            <div id="btn-nav-previous"> 
+                            <div id="btn-nav-previous">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </div>
                             <div id="btn-nav-next">
@@ -107,18 +134,25 @@
                             <div class="menu-inner-box">
                                 <div class="menu m-0 px-3">
 
-                                    <button type="button" class=" border-0 menu-item px-2 p-0 ms-4">All</button>
-                                    <button type="button"
-                                        class=" border-0 menu-item px-2 p-0 m-0 assetClass" data="Assets">Assets</button>
-                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0" data="Liabilities">Liability</button>
-                                    <button type="button"
-                                        class=" border-0 menu-item px-2 p-0 m-0" data="Equity">Equity/Capital</button>
-                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0" data="Revenue">Revenue</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 ms-4"
+                                        data="All">All</button>
                                     <button type="button" class=" border-0 menu-item px-2 p-0 m-0"
-                                    data="COGS">CoGS</button>
-                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0" data="Expense">G&A Expenses</button>
-                                    <button type="button" class=" border-0 menu-item px-2 p-0 me-4" data="Other Rev & Exp">Other Revenue &
+                                        data="Assets">Assets</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0"
+                                        data="Liabilities">Liability</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0"
+                                        data="Equity">Equity/Capital</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0"
+                                        data="Revenue">Revenue</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0"
+                                        data="COGS">CoGS</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 m-0" data="Expense">G&A
                                         Expenses</button>
+                                    <button type="button" class=" border-0 menu-item px-2 p-0 me-4"
+                                        data="Other Rev & Exp">Other Revenue &
+                                        Expenses</button>
+                                        <a class="menu-item" href="" at="">All</a>
+                                      
                                     <!-- <a class="menu-item" href="?at=All" at="All">All</a>
                                         <a class="menu-item" href="?at=Assets" at="Assets">Assets</a>
                                         <a class="menu-item" href="?at=Liability" at="Liability">Liability</a>
@@ -135,7 +169,7 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="fontsizeForMaindiv">
+                    <div class="">
                         <div class="searchDiv">
                             <input type="search" class="p-2 mb-2 w-100" placeholder="Search Account Here">
 
@@ -149,7 +183,7 @@
             </div>
         </div>
 
-        </div>
+
     </section>
 
     <script src="/bs5/jquery-3.6.3.min.js"></script>
@@ -157,6 +191,9 @@
     <script src="/js/standardizer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
         integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
+        integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 

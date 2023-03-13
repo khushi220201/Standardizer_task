@@ -4,6 +4,11 @@
     background-color: rgb(239,239,240);
     border: 1px solid rgb(219,219,220);
 }
+.navbarlogo{
+    height: 56px;
+    padding: 0%;
+    margin: 0%;
+}
 
 /* login image at left corner */
 
@@ -14,13 +19,10 @@
 
 .navbar-light .navbar-nav .nav-link.active{
     color: rgb(81,183,231)!important;
-    border-bottom: 2px solid rgb(81,183,231);
-    height: 120%;
-    width: 22px;
-    padding-inline: unset;
+   
  
 
-}
+} 
 .menubuttonbg{
     background-color: rgb(239,239,240);
     font-size: smaller;
@@ -40,7 +42,7 @@
 }
 
 .fontsizeForMaindiv{
-    font-size: 15px;
+    font-size: small;
 }
 .sourceAccountBg{
     background-color: rgb(75,165,229);
@@ -139,6 +141,70 @@ nav#menu-container {
     border-bottom: 2px solid rgb(62,157,102);
     color: rgb(62,157,102);
     font-weight: bold;
+    
 }
 
 
+
+/* link color and underline */
+.navbar-nav .nav-link {
+    position: relative;
+   
+    /* font-weight: bold; */
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 33%;
+    height: 2px;
+    bottom: -25px;
+    top: 47px;
+    left: 18px;
+    background-color:  rgb(81,183,231);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+   
+   
+}
+
+.navbar-nav .nav-link.active::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.lastupdateFontSize{
+    font-size: xx-small;
+    color: grey;
+}
+.humanUpdateFont
+{
+    color: rgb(241,142,62);
+}
+
+#sourceAccountData p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#mostLikelyData p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#likelyData p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#possibleData p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#masterData p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
